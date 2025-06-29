@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+terraform.lock.hcl
+
+# Logs y archivos temporales
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Binarios locales
+terraform
+terraformer
+*.zip
+*.tar.gz
+
+# VS Code / IDE
+.vscode/
+.idea/
