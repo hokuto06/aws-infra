@@ -3,6 +3,7 @@
 terraform.tfstate
 terraform.tfstate.*
 terraform.lock.hcl
+.terraform.lock.hcl
 
 # Logs y archivos temporales
 *.log

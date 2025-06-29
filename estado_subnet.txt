@@ -1,0 +1,44 @@
+# aws_subnet.public_a:
+resource "aws_subnet" "public_a" {
+    arn                                            = "arn:aws:ec2:us-east-1:203918879565:subnet/subnet-05ce4c4adf09cc043"
+    assign_ipv6_address_on_creation                = false
+    availability_zone                              = "us-east-1b"
+    availability_zone_id                           = "use1-az4"
+    cidr_block                                     = "172.31.16.0/20"
+    enable_dns64                                   = false
+    enable_lni_at_device_index                     = 0
+    enable_resource_name_dns_a_record_on_launch    = false
+    enable_resource_name_dns_aaaa_record_on_launch = false
+    id                                             = "subnet-05ce4c4adf09cc043"
+    ipv6_native                                    = false
+    map_customer_owned_ip_on_launch                = false
+    map_public_ip_on_launch                        = true
+    owner_id                                       = "203918879565"
+    private_dns_hostname_type_on_launch            = "ip-name"
+    region                                         = "us-east-1"
+    tags                                           = {}
+    tags_all                                       = {}
+    vpc_id                                         = "vpc-010018e05cb74e84f"
+}
+
+# aws_vpc.main:
+resource "aws_vpc" "main" {
+    arn                                  = "arn:aws:ec2:us-east-1:203918879565:vpc/vpc-010018e05cb74e84f"
+    assign_generated_ipv6_cidr_block     = false
+    cidr_block                           = "172.31.0.0/16"
+    default_network_acl_id               = "acl-0bf569b6713fbb9c3"
+    default_route_table_id               = "rtb-014cc23fbb5f4ea0d"
+    default_security_group_id            = "sg-0aaa74e055b320d19"
+    dhcp_options_id                      = "dopt-04a41e0bc9533a3ca"
+    enable_dns_hostnames                 = true
+    enable_dns_support                   = true
+    enable_network_address_usage_metrics = false
+    id                                   = "vpc-010018e05cb74e84f"
+    instance_tenancy                     = "default"
+    ipv6_netmask_length                  = 0
+    main_route_table_id                  = "rtb-014cc23fbb5f4ea0d"
+    owner_id                             = "203918879565"
+    region                               = "us-east-1"
+    tags                                 = {}
+    tags_all                             = {}
+}
