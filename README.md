@@ -5,7 +5,7 @@ Este repositorio contiene la infraestructura como código para el entorno de pro
 
 ---
 
-## ✅ Componentes actualmente registrados
+## Componentes actualmente registrados
 
 ### Red (módulo `vpc`)
 - VPC: `vpc-produccion` (`10.0.0.0/16`)
@@ -26,7 +26,7 @@ Este repositorio contiene la infraestructura como código para el entorno de pro
 
 ---
 
-## ⚙️ Módulos definidos
+## Módulos definidos
 
 ```hcl
 module "vpc" {
@@ -45,7 +45,7 @@ module "compute" {
 
 ---
 
-## 📤 Outputs configurados
+## Outputs configurados
 
 - ID de instancia EC2
 - IP pública (EIP)
@@ -54,7 +54,7 @@ module "compute" {
 
 ---
 
-## 🚧 Próximos pasos
+## Próximos pasos
 
 1. **Reorganizar y limpiar subnets** y sus tags/nombres
 2. Revisión y estandarización de **tablas de rutas**
@@ -64,7 +64,7 @@ module "compute" {
 
 ---
 
-## 🗂 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 infra/
