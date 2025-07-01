@@ -1,0 +1,108 @@
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following
+symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # module.vpc.aws_subnet.subnet_a1 will be updated in-place
+  ~ resource "aws_subnet" "subnet_a1" {
+        id                                             = "subnet-09fdcf85dc0fc2721"
+      ~ tags                                           = {
+          ~ "Name" = "MiVPC-Inicial-subnet-public1-us-east-1a" -> "subnet-public-a"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "MiVPC-Inicial-subnet-public1-us-east-1a" -> "subnet-public-a"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.subnet_a3 will be updated in-place
+  ~ resource "aws_subnet" "subnet_a3" {
+        id                                             = "subnet-00f72bf22637a6f01"
+      ~ tags                                           = {
+          ~ "Name" = "MiVPC-Inicial-subnet-private1-us-east-1a" -> "subnet-public-a3"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "MiVPC-Inicial-subnet-private1-us-east-1a" -> "subnet-public-a3"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.subnet_a4 will be updated in-place
+  ~ resource "aws_subnet" "subnet_a4" {
+        id                                             = "subnet-01cb60f643ee12dcb"
+      ~ tags                                           = {
+          ~ "Name" = "RDS-Pvt-subnet-1" -> "subnet-public-a4"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "RDS-Pvt-subnet-1" -> "subnet-public-a4"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.subnet_c2 will be updated in-place
+  ~ resource "aws_subnet" "subnet_c2" {
+        id                                             = "subnet-012951a136e2651bd"
+      ~ tags                                           = {
+          ~ "Name" = "RDS-Pvt-subnet-2" -> "subnet-public-c"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "RDS-Pvt-subnet-2" -> "subnet-public-c"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.subnet_d2 will be updated in-place
+  ~ resource "aws_subnet" "subnet_d2" {
+        id                                             = "subnet-021b02fabffd14ce3"
+      ~ tags                                           = {
+          ~ "Name" = "RDS-Pvt-subnet-3" -> "subnet-public-d"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "RDS-Pvt-subnet-3" -> "subnet-public-d"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.subnet_e2 will be updated in-place
+  ~ resource "aws_subnet" "subnet_e2" {
+        id                                             = "subnet-0eeafb6bc2661f153"
+      ~ tags                                           = {
+          ~ "Name" = "RDS-Pvt-subnet-4" -> "subnet-public-e"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "RDS-Pvt-subnet-4" -> "subnet-public-e"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.subnet_f2 will be updated in-place
+  ~ resource "aws_subnet" "subnet_f2" {
+        id                                             = "subnet-05ca18dbf2bb12adc"
+      ~ tags                                           = {
+          ~ "Name" = "RDS-Pvt-subnet-5" -> "subnet-public-f"
+        }
+      ~ tags_all                                       = {
+          ~ "Name" = "RDS-Pvt-subnet-5" -> "subnet-public-f"
+        }
+        # (16 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_vpc.prod will be updated in-place
+  ~ resource "aws_vpc" "prod" {
+        id                                   = "vpc-09f07bedab45bccd5"
+      ~ tags                                 = {
+          ~ "Name" = "MiVPC-Inicial-vpc" -> "vpc-produccion"
+        }
+      ~ tags_all                             = {
+          ~ "Name" = "MiVPC-Inicial-vpc" -> "vpc-produccion"
+        }
+        # (15 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 8 to change, 0 to destroy.
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run
+"terraform apply" now.
